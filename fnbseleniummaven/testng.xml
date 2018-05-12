@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Google Yahoo Page Test Suite">
+  <test name="Google Yahoo Page Test">
+    <classes>
+      <class name="com.google.tests.GoogleHomePageTest"/>
+      <class name="com.google.tests.YahooHomePageTest"/>
+    </classes>
+  </test>
+</suite>
