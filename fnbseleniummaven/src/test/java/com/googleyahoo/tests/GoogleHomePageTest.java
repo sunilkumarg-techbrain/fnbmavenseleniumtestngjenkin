@@ -1,4 +1,4 @@
-package com.google.tests;
+package com.googleyahoo.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,13 +8,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.fnb.pages.GoogleLoginPage;
-import com.fnb.pages.YahooLoginPage;
+
 import com.fnb.utils.SeleneseActionMethods;
 
-public class YahooHomePageTest {
+public class GoogleHomePageTest {
+
 	
 	private WebDriver driver; 
-	String appURL = "http://yahoo.com";
+	String appURL = "http://google.com";
 
 	@BeforeClass
 	public void testSetUp() {
@@ -23,9 +24,9 @@ public class YahooHomePageTest {
 	}
 	
 	@Test
-	public void verifyYahooPageTittle() {
+	public void verifyGooglePageTittle() {
 		SeleneseActionMethods.launchUrl(driver,appURL);
-		Assert.assertEquals(YahooLoginPage.getTitle(driver), "Yahoo");
+		Assert.assertEquals(GoogleLoginPage.getTitle(driver), "Google");
 	}
 	
 	@AfterClass
